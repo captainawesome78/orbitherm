@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orbitherm"
+version = "0.1.0"
+description = "Thermal digital twin for orbital compute: size the radiator, find the cooling wall."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "captainawesome78", email = "mailmenaveed88@gmail.com" }]
+keywords = ["orbital", "thermal", "radiator", "space-datacenter", "heat-rejection", "satellite", "edge-ai"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = []
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.5"]
+
+[project.urls]
+Homepage = "https://github.com/captainawesome78/orbitherm"
+Repository = "https://github.com/captainawesome78/orbitherm"
+Issues = "https://github.com/captainawesome78/orbitherm/issues"
+
+[tool.setuptools.packages.find]
+include = ["orbitherm*"]
